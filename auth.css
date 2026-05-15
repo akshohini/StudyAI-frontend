@@ -267,3 +267,77 @@ body{
     bottom:-80px;
     right:-80px;
 }
+/* RESPONSIVE DESIGN */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .left-section{
+        width:100%;
+        height:35vh;
+    }
+
+    .right-section{
+        width:100%;
+        padding:40px 20px;
+    }
+
+    .content h1{
+        font-size:42px;
+    }
+
+    .content p{
+        font-size:18px;
+    }
+
+    .login-card{
+        width:100%;
+        max-width:400px;
+    }
+
+}
+/* POPUP */
+
+.popup{
+    position:fixed;
+
+    top:30px;
+    right:30px;
+
+    background:white;
+
+    padding:20px 30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+    display:none;
+
+    align-items:center;
+    gap:15px;
+
+    animation:slideIn 0.4s ease;
+}
+
+.popup i{
+    color:#22c55e;
+    font-size:28px;
+}
+
+@keyframes slideIn{
+
+    from{
+        transform:translateX(100px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}

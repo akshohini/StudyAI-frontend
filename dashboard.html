@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyAI Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                StudyAI
+            </div>
+
+            <ul>
+
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-note-sticky"></i>
+                    Notes
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    Planner
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    Analytics
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+
+            <div class="topbar">
+
+                <input type="text" placeholder="Search...">
+                <button class="theme-btn" id="themeBtn">
+
+    <i class="fa-solid fa-moon"></i>
+
+</button>
+
+                <div class="profile">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <img src="https://i.pravatar.cc/100" alt="profile">
+
+                </div>
+
+            </div>
+
+            <!-- CARDS -->
+
+            <div class="cards">
+
+                <div class="card purple">
+
+                    <h3>Study Hours</h3>
+
+                    <h1>12.5h</h1>
+
+                    <p>+20% this week</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Tasks Completed</h3>
+
+                    <h1>18</h1>
+
+                    <p>+12% this week</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Productivity</h3>
+
+                    <h1>75%</h1>
+
+                    <p>Keep it up 🚀</p>
+
+                </div>
+
+            </div>
+            <!-- PROGRESS SECTION -->
+
+<div class="progress-section">
+
+    <div class="progress-card">
+
+        <h2>Weekly Progress</h2>
+
+        <div class="progress-bar">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+        <p>75% Completed</p>
+
+    </div>
+
+    <div class="progress-card">
+
+        <h2>Study Goal</h2>
+
+        <div class="circle">
+
+            <span>80%</span>
+
+        </div>
+
+        <p>Goal Achievement</p>
+
+    </div>
+
+</div>
+
+            <!-- RECENT ACTIVITY -->
+
+            <div class="activity">
+
+                <h2>Recent Activity</h2>
+
+                <div class="activity-box">
+
+                    <p>✅ Completed AI Assignment</p>
+
+                    <p>📚 Studied Neural Networks</p>
+
+                    <p>📝 Added 5 new notes</p>
+
+                    <p>🚀 Productivity increased by 15%</p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

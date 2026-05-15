@@ -399,3 +399,98 @@ nav{
 
     font-weight:600;
 }
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+
+        padding:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:50px 20px;
+    }
+
+    .hero-left{
+        width:100%;
+    }
+
+    .hero-right{
+        width:100%;
+
+        margin-top:40px;
+    }
+
+    .hero-left h1{
+        font-size:48px;
+    }
+
+    .features{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .dashboard-cards{
+        grid-template-columns:1fr;
+    }
+
+}
+/* MENU TOGGLE */
+
+.menu-toggle{
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#6c63ff;
+}
+
+/* MOBILE RESPONSIVE NAVBAR */
+
+@media(max-width:900px){
+
+    nav{
+        padding:20px;
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:90px;
+        right:-100%;
+
+        width:250px;
+        height:100vh;
+
+        background:white;
+
+        flex-direction:column;
+
+        padding:40px;
+
+        transition:0.4s;
+
+        box-shadow:-5px 0 20px rgba(0,0,0,0.08);
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .auth-buttons{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+}
